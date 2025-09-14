@@ -1,0 +1,24 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "notes management from cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "bin": {
+    "notes": "./index.js"
+  },
+  "keywords": [
+    "note",
+    "note-cli"
+  ],
+  "author": "utkarsh rai (utkarshrai5678@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "yargs": "^18.0.0"
+  }
+}

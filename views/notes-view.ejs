@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Notes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2em;
+      }
+      h1 {
+        color: #333;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background: #f4f4f4;
+        margin: 0.5em 0;
+        padding: 1em;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All Notes</h1>
+    <% if (notes && notes.length > 0) { %>
+    <ul>
+      <% notes.forEach(function(note, idx) { %>
+      <li>
+        <strong>Note <%= idx + 1 %>:</strong><br />
+        <% Object.entries(note).forEach(function([key, value]) { %>
+        <span><strong><%= key %></strong>: <%= value %></span><br />
+        <% }); %>
+      </li>
+      <% }); %>
+    </ul>
+    <% } else { %>
+    <p>No notes found.</p>
+    <% } %>
+  </body>
+</html>

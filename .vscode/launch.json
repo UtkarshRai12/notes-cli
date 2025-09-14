@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch notes debugger",
+      "program": "${workspaceFolder}/index.js",
+      "console": "integratedTerminal"
+    }
+  ]
+}
