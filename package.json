@@ -5,7 +5,7 @@
   "description": "notes management from cli",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "vitest"
   },
   "bin": {
     "notes": "./index.js"
@@ -20,5 +20,8 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
   }
 }
